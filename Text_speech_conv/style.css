@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: blueviolet;
+}
+.container{
+    background-color: aliceblue;
+    width: 80%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    border-radius: 0.5em;
+    padding: 2em; 
+}
+textarea{
+    font-size: 1em;
+    width: 100%;
+    border-radius: 0.5em;
+    padding: 1em;
+    resize: none;
+    border: 1px solid blueviolet;
+}
+#submit{
+    font: 1.2em;
+    display: block;
+    width: 30%;
+    margin: auto;
+    padding: 1.2em;
+    border: 1px solid blue;
+    background-color: blueviolet;
+    color: black;
+    cursor: pointer;
+}
+.controls{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1em;
+}
+.controls button{
+    display: block;
+    width: 3em;
+    height: 3em;
+    font-size: 1em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    color:blueviolet;
+    border: 0.12em solid blueviolet;
+    background-color: transparent;
+}
