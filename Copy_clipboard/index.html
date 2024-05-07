@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Copy To Clipbaord Button</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins|Work+Sans&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<p id="text1">This is some text to be copied.</p>
+	<button class="copyButton" id="copyButton1">
+		Copy To Clipboard
+	</button>
+	<p id="text2">Another text to be copied.</p>
+	<button class="copyButton" id="copyButton2">
+		Copy To Clipboard
+	</button>
+	<span class="alert">Copied!</span>
+	<script>
+		function copy(copyId){
+			var $inp=$("<input>");
+			$("body").append($inp);
+			$inp.val($(""+copyId).text()).select();
+			document.execCommand("copy");
+			$inp.remove();
+			$(".alert").fadeIn(500,function(){
+				$(".alert").fadeOut();
+			});
+		}
+		$(document).ready(function(){
+			$("#copyButton1").click(function(){
+				copy('#text1');
+			});
+			$("#copyButton2").click(function(){
+				copy('#text2');
+			});
+		});
+	</script>
+</body>
+</html>
