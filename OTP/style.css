@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: navy;
+}
+.container{
+    background-color: white;
+    width: 600px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+    padding: 3em;
+    border-radius: 0.5 em;
+}
+h1{
+    text-align: center;
+    color:black;
+}
+button{
+    font-size: 1em;
+    background-color: navy;
+    display: block;
+    margin: 2em auto;
+    padding: 1em;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+#otpdisplay{
+    font-size: 1em;
+    background-color: yellowgreen;
+    color:black;
+    letter-spacing: 1em;
+    text-align: center;
+    padding: 1em auto;
+}
